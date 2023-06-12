@@ -1,6 +1,6 @@
 // section01
 $(document).ready(function () {
-  var main_slide = new Swiper(".swiper-container", {
+  var main_slide = new Swiper(".section01 .swiper-container", {
     direction: "horizontal",
     slidesPerView: 1,
     loop: true,
@@ -9,53 +9,88 @@ $(document).ready(function () {
     //   delay: 3000,
     //   disableOnInteraction: false,
     // },
-
-    // on: {
-    //   slideChange: function (index, item) {
-    //     $(".section01 .slide-nav li").removeClass("on");
-    //     $(".section01 .slide-nav li").eq(this.realIndex).addClass("on");
-    //   },
-    // },
     pagination: {
       el: ".section01 .swiper-pagination",
       clickable: true,
     },
   });
   // //section02 슬라이드
-  // if ($(window).width() < 990) {
-  //   $(".section02 .contents-wrap ul").addClass("swiper-wrapper");
-  //   $(".section02 .contents-wrap ul li").addClass("swiper-slide");
-  //   $(".section02 .contents-wrap").append('<div class="swiper-button-next bt_next"></div>', '<div class="swiper-button-prev bt_prev"></div>');
-  //   var bath_slide = new Swiper(".section02 .contents-wrap", {
-  //     speed: 1000,
-  //     slidesPerView: 3,
-  //     centeredSlides: true,
-  //     spaceBetween: 10,
-  //     loop: true,
-  //     // autoplay: {
-  //     //   delay: 3000,
-  //     //   disableOnInteraction: false,
-  //     // },
-  //     breakpoints: {
-  //       450: {
-  //         slidesPerView: 1,
-  //         spaceBetween: 0,
-  //         simulateTouch: true,
-  //       },
-  //       767: {
-  //         slidesPerView: 2,
-  //         spaceBetween: 10,
-  //         simulateTouch: true,
-  //       },
-  //     },
-  //     navigation: {
-  //       nextEl: ".section02 .swiper-button-next",
-  //       prevEl: ".section02 .swiper-button-prev",
-  //     },
-  //   });
-  // }
+  var slideNav = $(".section02 .menu-cate li");
+  $.each(slideNav, function (index, item) {
+    $(this).click(function () {
+      menu_slide.slideToLoop(index);
+      slideNav.removeClass("on");
+      $(this).addClass("on");
+    });
+  });
+
+  var menu_slide = new Swiper(".section02 .swiper-container", {
+    direction: "horizontal",
+    slidesPerView: 1,
+    // observer: true,
+    // observeParents: true,
+    speed: 1000,
+    spaceBetween: 10,
+    loop: true,
+    // autoplay: {
+    //   delay: 3000,
+    //   disableOnInteraction: false,
+    // },
+    on: {
+      slideChange: function (index, item) {
+        $(".section02 .menu-cate li").removeClass("on");
+        $(".section02 .menu-cate li").eq(this.realIndex).addClass("on");
+      },
+    },
+    breakpoints: {
+      450: {
+        slidesPerView: 1,
+        spaceBetween: 0,
+        simulateTouch: true,
+      },
+      767: {
+        slidesPerView: 2,
+        spaceBetween: 10,
+        simulateTouch: true,
+      },
+    },
+    navigation: {
+      nextEl: ".section02 .swiper-button-next",
+      prevEl: ".section02 .swiper-button-prev",
+    },
+
+    // pagination: {
+    //   el: ".section02 .menu .swiper-pagination",
+    //   clickable: true,
+    // },
+  });
 
   // // section03
+  // var notice_slide = new Swiper(".section03 .swiper-container", {
+  //   direction: "horizontal",
+  //   // slidesPerView: 1,
+  //   loop: true,
+  //   spaceBetween: 20,
+  //   centeredSlides: true,
+  //   loop: true,
+  //   // autoplay: {
+  //   //   delay: 3000,
+  //   //   disableOnInteraction: false,
+  //   // },
+  //   navigation: {
+  //     nextEl: ".section03 .swiper-button-next",
+  //     prevEl: ".section03 .swiper-button-prev",
+  //   },
+  //   breakpoints: {
+  //     640: {
+  //       slidesPerView: 2,
+  //     },
+  //   },
+  //   // pagination: {
+  //   //   el: ".section02 .menu .swiper-pagination",
+  //   //   clickable: true,
+  //   // },
+  // });
   // $("#wrap .section03").waypoint(
   //   function () {
   //     $("#wrap #section03 .line_wrap").addClass("on");
