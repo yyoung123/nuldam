@@ -40,6 +40,36 @@ body {
 .container .txt_cont {
   text-align: center;
 }
+.container .view_btn {
+  width: 250px;
+  padding-top: 40px;
+}
+.container .view_btn a {
+  display: flex;
+  color: #333;
+  width: 250px;
+  padding: 15px 40px;
+  justify-content: flex-start;
+  align-items: center;
+  border: 2px solid #333;
+}
+.container .view_btn a:before {
+  position: absolute;
+  content: "";
+  display: block;
+  padding: 10px 90px;
+  background: url(../img/layout/arrow_.png) no-repeat right/50%;
+  opacity: 0.8;
+}
+.container .view_btn a:hover {
+  background: #0047b8;
+  color: #fff;
+  border: 2px solid #0047b8;
+}
+.container .view_btn a:hover:before {
+  filter: invert(100%);
+  opacity: 1;
+}
 .container .section01 {
   position: relative;
   overflow: hidden;
@@ -87,34 +117,6 @@ body {
   font-size: 40px;
   line-height: 1.6;
 }
-.container .section01 .txt-wrap .view_btn {
-  padding: 20px 0;
-}
-.container .section01 .txt-wrap .view_btn a {
-  color: #333;
-  width: 250px;
-  padding: 15px 40px;
-  justify-content: flex-start;
-  align-items: center;
-  border: 2px solid #333;
-}
-.container .section01 .txt-wrap .view_btn a:before {
-  position: absolute;
-  content: "";
-  display: block;
-  padding: 10px 90px;
-  background: url(../img/layout/arrow_.png) no-repeat right/50%;
-  opacity: 0.8;
-}
-.container .section01 .txt-wrap .view_btn a:hover {
-  background: #0047b8;
-  color: #fff;
-  border: 2px solid #0047b8;
-}
-.container .section01 .txt-wrap .view_btn a:hover:before {
-  filter: invert(100%);
-  opacity: 1;
-}
 .container .section01 .slidebox {
   height: 100vh;
   position: relative;
@@ -127,7 +129,7 @@ body {
   background: url("../img/main/1_4.png") no-repeat 50% 50%/cover;
 }
 .container .section01 .visual-box._02 {
-  background: url("../img/main/102_2.png") no-repeat 50% 50%/100%;
+  background: url("../img/main/102_2.png") no-repeat 50% 50%/cover;
 }
 .container .section01 .visual-box._03 {
   background: url("../img/main/290050767_745717463296197_6948282066110344453_n.jpg") no-repeat left 40%/100%;
@@ -281,10 +283,10 @@ body {
   padding: 5px 0;
 }
 .container .section02 .swiper-button-prev {
-  left: 80px;
+  left: 100px;
 }
 .container .section02 .swiper-button-next {
-  right: 80px;
+  right: 100px;
 }
 .container .section03 {
   position: relative;
@@ -403,57 +405,26 @@ body {
 }
 .container .section04 {
   font-family: "NanumSquare";
-  padding: 200px 0;
+  padding: 100px 0 200px;
   position: relative;
-  background: url("../img/main/section04.png") no-repeat 30% 50%;
+  background: url("../img/main/5-0.png") no-repeat 80% bottom;
 }
 .container .section04 h1 {
-  font-weight: 600;
+  font-weight: 800;
   font-size: 67px;
   line-height: 78px;
-  letter-spacing: 0.05em;
   color: #1a1a1a;
-  padding: 20px 0 80px 0;
+  padding: 0 0 50px;
 }
 .container .section04 .contents {
   position: relative;
   width: 100%;
 }
 .container .section04 .contents .txt-box {
-  width: 50%;
+  padding-bottom: 50px;
 }
 .container .section04 .contents .txt-box .txt {
   font-size: 20px;
-}
-.container .section04 .contents .txt-box .view_btn {
-  padding: 20px 0;
-}
-.container .section04 .contents .txt-box .view_btn a {
-  position: absolute;
-  display: flex;
-  color: #333;
-  width: 250px;
-  padding: 15px 40px;
-  justify-content: flex-start;
-  align-items: center;
-  border: 2px solid #333;
-}
-.container .section04 .contents .txt-box .view_btn a:before {
-  position: absolute;
-  content: "";
-  display: block;
-  padding: 10px 90px;
-  background: url(../img/layout/arrow_.png) no-repeat right/50%;
-  opacity: 0.8;
-}
-.container .section04 .contents .txt-box .view_btn a:hover {
-  background: #0047b8;
-  color: #fff;
-  border: 2px solid #0047b8;
-}
-.container .section04 .contents .txt-box .view_btn a:hover:before {
-  filter: invert(100%);
-  opacity: 1;
 }
 .container .section05 {
   position: relative;
@@ -464,16 +435,20 @@ body {
   font-weight: 400;
   font-size: 20px;
   line-height: 1;
-  color: #fe99b0;
+  color: #99defe;
 }
 .container .section05 h1 {
-  font-family: Noto Sans-serif;
-  font-weight: 600;
+  font-family: NanumSquare;
+  font-weight: 800;
   font-size: 67px;
   line-height: 78px;
-  letter-spacing: 0.05em;
-  color: #1a1a1a;
-  padding: 20px 0 80px 0;
+  letter-spacing: 0.03em;
+  color: #333;
+  padding: 20px 0 60px 0;
+}
+.container .section05 .picture ul {
+  display: flex;
+  padding-top: 40px;
 }
 .container .section05 .picture li {
   width: 100%;

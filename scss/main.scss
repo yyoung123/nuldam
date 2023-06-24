@@ -38,6 +38,36 @@ body {
   .txt_cont {
     text-align: center;
   }
+  .view_btn {
+    width: 250px;
+    padding-top: 40px;
+    a {
+      display: flex;
+      color: #333;
+      width: 250px;
+      padding: 15px 40px;
+      justify-content: flex-start;
+      align-items: center;
+      border: 2px solid #333;
+      &:before {
+        position: absolute;
+        content: "";
+        display: block;
+        padding: 10px 90px;
+        background: url(../img/layout/arrow_.png) no-repeat right / 50%;
+        opacity: 0.8;
+      }
+      &:hover {
+        background: #0047b8;
+        color: #fff;
+        border: 2px solid #0047b8;
+        &:before {
+          filter: invert(100%);
+          opacity: 1;
+        }
+      }
+    }
+  }
   .section01 {
     position: relative;
     overflow: hidden;
@@ -88,35 +118,8 @@ body {
         font-size: 40px;
         line-height: 1.6;
       }
-      .view_btn {
-        padding: 20px 0;
-        a {
-          color: #333;
-          width: 250px;
-          padding: 15px 40px;
-          justify-content: flex-start;
-          align-items: center;
-          border: 2px solid #333;
-          &:before {
-            position: absolute;
-            content: "";
-            display: block;
-            padding: 10px 90px;
-            background: url(../img/layout/arrow_.png) no-repeat right / 50%;
-            opacity: 0.8;
-          }
-          &:hover {
-            background: #0047b8;
-            color: #fff;
-            border: 2px solid #0047b8;
-            &:before {
-              filter: invert(100%);
-              opacity: 1;
-            }
-          }
-        }
-      }
     }
+
     .slidebox {
       height: 100vh;
       position: relative;
@@ -128,7 +131,7 @@ body {
         background: url("../img/main/1_4.png") no-repeat 50% 50% / cover;
       }
       &._02 {
-        background: url("../img/main/102_2.png") no-repeat 50% 50% / 100%;
+        background: url("../img/main/102_2.png") no-repeat 50% 50% / cover;
       }
       &._03 {
         background: url("../img/main/290050767_745717463296197_6948282066110344453_n.jpg") no-repeat left 40% / 100%;
@@ -283,10 +286,10 @@ body {
       }
     }
     .swiper-button-prev {
-      left: 80px;
+      left: 100px;
     }
     .swiper-button-next {
-      right: 80px;
+      right: 100px;
     }
   }
   .section03 {
@@ -412,54 +415,24 @@ body {
   }
   .section04 {
     font-family: "NanumSquare";
-    padding: 200px 0;
+    padding: 100px 0 200px;
     position: relative;
-    background: url("../img/main/section04.png") no-repeat 30% 50%;
+    background: url("../img/main/5-0.png") no-repeat 80% bottom;
     h1 {
-      font-weight: 600;
+      font-weight: 800;
       font-size: 67px;
       line-height: 78px;
-      letter-spacing: 0.05em;
+      // letter-spacing: 0.03em;
       color: #1a1a1a;
-      padding: 20px 0 80px 0;
+      padding: 0 0 50px;
     }
     .contents {
       position: relative;
       width: 100%;
       .txt-box {
-        width: 50%;
+        padding-bottom: 50px;
         .txt {
           font-size: 20px;
-        }
-        .view_btn {
-          padding: 20px 0;
-          a {
-            position: absolute;
-            display: flex;
-            color: #333;
-            width: 250px;
-            padding: 15px 40px;
-            justify-content: flex-start;
-            align-items: center;
-            border: 2px solid #333;
-            &:before {
-              position: absolute;
-              content: "";
-              display: block;
-              padding: 10px 90px;
-              background: url(../img/layout/arrow_.png) no-repeat right / 50%;
-              opacity: 0.8;
-            }
-            &:hover {
-              background: #0047b8;
-              color: #fff;
-              border: 2px solid #0047b8;
-              &:before {
-                filter: invert(100%);
-                opacity: 1;
-              }
-            }
-          }
         }
       }
     }
@@ -469,25 +442,24 @@ body {
     padding: 130px 150px;
     text-align: center;
     h5 {
-      // font-family: 'Source Serif Pro';
-      // font-style: normal;
       font-weight: 400;
       font-size: 20px;
       line-height: 1;
-      // text-transform: capitalize;
-      color: #fe99b0;
+      color: #99defe;
     }
     h1 {
-      font-family: Noto Sans-serif;
-      font-weight: 600;
+      font-family: NanumSquare;
+      font-weight: 800;
       font-size: 67px;
       line-height: 78px;
-      letter-spacing: 0.05em;
-      color: #1a1a1a;
-      padding: 20px 0 80px 0;
+      letter-spacing: 0.03em;
+      color: #333;
+      padding: 20px 0 60px 0;
     }
     .picture {
       ul {
+        display: flex;
+        padding-top: 40px;
       }
       li {
         width: 100%;
