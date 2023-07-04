@@ -371,7 +371,7 @@ img {
   letter-spacing: 0;
 }
 #footer .f-main {
-  padding: 10px 0 30px;
+  padding: 10px 0 50px;
   display: flex;
   justify-content: space-evenly;
 }
@@ -513,7 +513,7 @@ img {
   #footer .f-main {
     flex-direction: column;
     align-items: center;
-    padding: 45px 0 40px;
+    padding: 20px 0 50px;
   }
   #footer .f-main .f-left {
     width: auto;
@@ -554,5 +554,8 @@ img {
   }
   #footer .menu ul li {
     font-size: 12px;
+  }
+  #footer .copyright p {
+    font-size: 10px;
   }
 }

@@ -318,7 +318,6 @@ img {
   background: #fff2d9;
   .footer-wrap {
     .info {
-      // width: 33%;
       font-size: 14px;
       font-weight: 400;
       line-height: 1.8;
@@ -375,7 +374,7 @@ img {
     }
   }
   .f-main {
-    padding: 10px 0 30px;
+    padding: 10px 0 50px;
     display: flex;
     justify-content: space-evenly;
     .f-left {
@@ -560,7 +559,7 @@ img {
     .f-main {
       flex-direction: column;
       align-items: center;
-      padding: 45px 0 40px;
+      padding: 20px 0 50px;
       .f-left {
         width: auto;
       }
@@ -611,6 +610,11 @@ img {
     }
     .menu ul li {
       font-size: 12px;
+    }
+    .copyright {
+      p {
+        font-size: 10px;
+      }
     }
   }
 }
