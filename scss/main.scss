@@ -42,6 +42,7 @@ body {
     width: 250px;
     padding-top: 40px;
     span {
+      color: #333;
       display: inline-block;
       width: 100%;
       position: relative;
@@ -49,7 +50,6 @@ body {
     }
     a {
       display: flex;
-      color: #333;
       width: 250px;
       padding: 15px 40px;
       justify-content: flex-start;
@@ -124,16 +124,16 @@ body {
     .visual-box {
       position: relative;
       &._01 {
-        background: url("../img/main/1_4.png") no-repeat 60% / cover;
+        background: url("../img/main/1_1.png") no-repeat 60% / cover;
       }
       &._02 {
-        background: url("../img/main/102_2.png") no-repeat 50% 50% / cover;
+        background: url("../img/main/1_2.png") no-repeat 50% 50% / cover;
       }
       &._03 {
-        background: url("../img/main/290050767_745717463296197_6948282066110344453_n.jpg") no-repeat left / cover;
+        background: url("../img/main/1_3.jpg") no-repeat 80% / cover;
       }
       &._04 {
-        background: url("../img/main/4_1.png") no-repeat 30% / cover;
+        background: url("../img/main/1_4.png") no-repeat 25% / cover;
       }
     }
     .swiper-pagination {
@@ -190,12 +190,15 @@ body {
       position: relative;
       min-width: 250px;
       padding: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
       overflow: hidden;
       a {
         position: relative;
         display: block;
       }
-      > div {
+      .img-box {
         img {
           border-radius: 20px;
         }
@@ -244,7 +247,7 @@ body {
       border-radius: 30px;
     }
   }
-  .section025 {
+  .mo-section03 {
     padding: 100px 0;
     position: relative;
     width: 100%;
@@ -323,16 +326,19 @@ body {
       display: flex;
       justify-content: center;
       align-items: center;
+      .img-box {
+        padding: 10px;
+      }
       img {
         border-radius: 30px;
-        padding: 10px;
       }
     }
     .swiper-container-v {
       overflow: hidden;
-      .swiper-slide {
-        min-width: 280px;
-        max-width: 300px;
+      .img-box {
+        padding: 10px;
+        min-width: 240px;
+        max-width: 350px;
       }
     }
     .contents-txt {
@@ -517,18 +523,35 @@ body {
       margin: 0 auto;
     }
     .swiper-container {
-      display: none;
       overflow: visible;
       margin: 50px 0;
+    }
+    .swiper-slide {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      max-width: 410px;
+      margin: 0 auto;
+    }
+    .swiper-pagination {
+      left: 50%;
+      top: auto;
+      transform: translateX(-50%);
+      bottom: -30px;
+      width: 80%;
+      height: 2px;
     }
     .notice-list {
       width: 100%;
       display: flex;
       justify-content: space-between;
+      .img-box {
+        overflow: hidden;
+      }
       li {
         position: relative;
         overflow: hidden;
-        // width: calc(33.33% - 10px);
         margin: 0 10px;
         border: 1px solid #a1a1a1;
         border-radius: 20px;
@@ -690,6 +713,7 @@ body {
         width: 100%;
         cursor: pointer;
         margin-right: 20px;
+        transition: 0.3s;
         &:last-child {
           margin-right: 0;
         }

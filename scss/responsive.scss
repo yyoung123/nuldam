@@ -1,4 +1,4 @@
-// section025 -> 모바일03으로 변경해야됨.
+// mo-section03 -> 모바일03으로 변경해야됨.
 @media all and (max-width: 1440px) {
   .container {
     .section02 {
@@ -30,7 +30,7 @@
       }
     }
     .section06 {
-      padding: 130px clamp(50px, 8vw, 150px);
+      padding: 130px clamp(10px, 5vw, 150px);
       .picture ul {
         padding: 40px 20px;
       }
@@ -64,7 +64,7 @@
     .section02 {
       padding: 80px 0 50px;
     }
-    .section025,
+    .mo-section03,
     .section03 {
       padding: 0 0 50px;
       .tit-box {
@@ -117,7 +117,7 @@
 @media all and (max-width: 1100px) {
   .container {
     .section02,
-    .section025 {
+    .mo-section03 {
       .tit-box {
         .menu-tit {
           text-align: center;
@@ -137,7 +137,7 @@
       }
     }
     .section03,
-    .section025 {
+    .mo-section03 {
       // padding: 50px 0;
       &::before {
         display: none;
@@ -251,7 +251,7 @@
       }
     }
     .section02,
-    .section025 {
+    .mo-section03 {
       .tit-box {
         .menu-tit {
           font-size: 32px;
@@ -266,7 +266,7 @@
         }
       }
     }
-    .section025 {
+    .mo-section03 {
       display: block;
     }
     .section03 {
@@ -283,7 +283,7 @@
     }
     .section05 {
       padding: 80px 0 200px;
-      background: url("../img/main/n5.png") no-repeat 100% 50% / cover;
+      background: url("../img/main/m5.png") no-repeat 100% 50% / cover;
       h1 {
         font-size: 40px;
         text-align: center;
@@ -309,9 +309,14 @@
   }
 }
 
-@media all and (max-width: 860px) {
+@media all and (max-width: 861px) {
   .container {
-    .section025,
+    .section01 {
+      .txt-wrap {
+        padding: 0 60px;
+      }
+    }
+    .mo-section03,
     .section03 {
       .tit-box {
         padding: 30px 40px;
@@ -338,10 +343,10 @@
       .txt .main-tit {
         padding-bottom: 0;
       }
-      // .notice-wrapper {
-      //   display: none;
-      // }
       .notice-list {
+        li {
+          margin: 0;
+        }
         .desc {
           height: 150px;
           font-size: 16px;
@@ -355,15 +360,6 @@
       .swiper-container {
         display: block;
         .swiper-wrapper {
-          left: -9%;
-        }
-        .swiper-pagination {
-          left: 50%;
-          top: auto;
-          transform: translateX(-50%);
-          bottom: -30px;
-          width: 80%;
-          height: 2px;
         }
       }
     }
@@ -429,7 +425,15 @@
 }
 @media all and (max-width: 600px) {
   .container {
-    .section025,
+    .section02 {
+      .swiper-slide {
+        .img-box {
+          margin: 0 auto;
+          max-width: 350px;
+        }
+      }
+    }
+    .mo-section03,
     .section03 {
       .tit-box {
         .menu-cate {
@@ -460,6 +464,12 @@
     display: block;
   }
   .container {
+    .section04 {
+      .notice-list .desc {
+        height: 130px;
+        font-size: 14px;
+      }
+    }
     .section05 {
       h1 {
         font-size: 28px;
